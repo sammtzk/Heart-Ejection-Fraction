@@ -15,17 +15,13 @@
 ## **Next Steps / Future Improvements**
 While our current model provides an approach to estimating ejection fraction (EF) using machine learning techniques, there are several areas for improvement and future directions.
 
-1. **Improving Feature Extraction**
+## **1. Improving Feature Extraction**
 The choice of **ResNet18** for feature extraction prioritized texture-based patterns such as **edges, curves, and gradients**. However, this may not fully capture the **temporal dynamics** of the left ventricle’s motion. To improve this:  
 
 ### **Alternative Deep Learning Models:**
 - **Echonet**: A deep learning model specifically designed for echocardiography, trained on large-scale EF datasets.
 - **Lidar3DCNN**: A 3D convolutional model that could capture volumetric changes more effectively.
 - **TimeSformer**: A transformer-based architecture that models spatial and temporal dependencies better than CNNs.
-
-### **Incorporating Optical Flow Features**  
-- Optical flow tracks **motion dynamics** between frames, potentially improving how we model left ventricle movement during systole and diastole.
-- Could be used alongside CNN features to enhance EF prediction.
 
 ## **2. Refining State Modeling (Beyond GMM-HMM)**
 Our current pipeline applies **Gaussian Mixture Models (GMM) + Hidden Markov Models (HMM)** to model state transitions. However, several enhancements could be explored:
