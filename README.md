@@ -73,6 +73,12 @@ Our goal is to create a pipeline that predicts EF using primarily the collection
 ## **Model Pipeline**
 ![Flow Chart](./attachment/flowchart.png)
 
+### **Video Standardization and Preprocessing**
+
+In the effort to train a proof-of-concept EF prediction model from echocardiogram videos, our pipeline necessitates first constructing a subset of the videos which have identical descriptive metadata (resolution, FPS, number of frames). This is to ensure uniformity in the inputs to the ResNet-18 for transfer learning. We select the subset of videos which have the following attributes: FrameHeight: 112, FrameWidth: 112, FPS: 50, NumberOfFrames: 201. This produces a subset of 208 videos, but we are cognizant that future development of this pipeline should include broader video standardization processes to increase the size of training, testing, and validation splits.
+
+As a preprocessing step, video frames need to be extracted before the ResNet-18 feature extraction. We use OpenCV to perform grayscale transformations of the video color data as well as basic frame extraction. The *1. Data Sampling and Frame Extraction* notebook saves extracted frame data using Pickle serialization to increase data loading efficiency within Python environments. Some sample code is included to demonstrate how video frames can be saved in other formats.
+
 ### **Feature Extraction with CNN**
 
 Inputting the raw pixel data from the videos to the Gaussian HMM can lead to computational inefficiency because of the large number of pixels that are extracted per frame, which can lead to the HMM struggling to train. Besides that, the HMM will be trained with irrelevant features from the image. To mitigate this issue, we use a pre-trained CNN called ResNet18 to extract the most important features from the pixel data in a lower dimensional space. We use ResNet18 for a few reasons:
