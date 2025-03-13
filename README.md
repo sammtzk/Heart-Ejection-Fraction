@@ -29,9 +29,8 @@ EF is calculated based on two key **cardiac cycle phases**:
 - **End-Diastolic Volume (EDV)** – Maximum ventricular volume (when the ventricle is full)  
 - **End-Systolic Volume (ESV)** – Minimum ventricular volume (after contraction)  
 
-\[
-EF = \left(\frac{\text{EDV} - \text{ESV}}{\text{EDV}} \right) \times 100
-\]
+EF = (EDV - ESV) / EDV X 100
+
 
 ### **Cardiac Cycle Breakdown**  
 
