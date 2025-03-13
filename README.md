@@ -15,7 +15,7 @@
 ## **Next Steps / Future Improvements**
 While our current model provides an approach to estimating ejection fraction (EF) using machine learning techniques, there are several areas for improvement and future directions.
 
-1. Improving Feature Extraction
+1. **Improving Feature Extraction**
 The choice of **ResNet18** for feature extraction prioritized texture-based patterns such as **edges, curves, and gradients**. However, this may not fully capture the **temporal dynamics** of the left ventricle’s motion. To improve this:  
 
 ### **Alternative Deep Learning Models:**
