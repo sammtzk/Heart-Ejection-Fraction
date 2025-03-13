@@ -20,6 +20,8 @@ By leveraging machine learning, we aim to **streamline EF estimation**, reduce m
 ---
 ## **Data Set**
 
+***DATA ACCESS DISCLOSURE:*** Access to the data used for this research is granted under the Stanford University School of Medicine EchoNet-Dynamic Dataset Research Use Agreement: [Accessing Dataset](https://echonet.github.io/dynamic/index.html#access).
+
 Our **Cardio-Health Predictive Model** utilizes the **EchoNet-Dynamic dataset**, a publicly available compilation of over **10,000 echocardiogram videos** collected between **2016 and 2018 at Stanford University Hospital**. Each video is accompanied by **volume tracings** and **clinical measurements**, including **ejection fraction (EF)** - a measure estimating the percentage of blood pumped out of the left ventricle during a heart contraction.  
 
 Experts at a **Stanford lab** used the videos, volume tracings, and EF measurements to design a **deep learning model** that:
@@ -77,7 +79,7 @@ Our goal is to create a pipeline that predicts EF using primarily the collection
 
 In the effort to train a proof-of-concept EF prediction model from echocardiogram videos, our pipeline necessitates first constructing a subset of the videos which have identical descriptive metadata (resolution, FPS, number of frames). This is to ensure uniformity in the inputs to the ResNet-18 for transfer learning. We select the subset of videos which have the following attributes: FrameHeight: 112, FrameWidth: 112, FPS: 50, NumberOfFrames: 201. This produces a subset of 208 videos, but we are cognizant that future development of this pipeline should include broader video standardization processes to increase the size of training, testing, and validation splits.
 
-As a preprocessing step, video frames need to be extracted before the ResNet-18 feature extraction. We use OpenCV to perform grayscale transformations of the video color data as well as basic frame extraction. The *1. Data Sampling and Frame Extraction* notebook saves extracted frame data using Pickle serialization to increase data loading efficiency within Python environments. Some sample code is included to demonstrate how video frames can be saved in other formats.
+As a preprocessing step, video frames need to be extracted before the ResNet-18 feature extraction. We use OpenCV to perform grayscale transformations of the video color data as well as basic frame extraction. The [1. Data Sampling and Frame Extraction](1_Data_Sampling_and_Frame_Extraction.ipynb) notebook saves extracted frame data using Pickle serialization to increase data loading efficiency within Python environments. Some sample code is included to demonstrate how video frames can be saved in other formats.
 
 ### **Feature Extraction with CNN**
 
