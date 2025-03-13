@@ -23,7 +23,7 @@ By leveraging machine learning, we aim to **streamline EF estimation**, reduce m
 ---
 ## **Data Set**
 
-[![Echocardiogram]("./attachment/0XFE83FF3D3B13C3A.avi")
+[![Echocardiogram](./attachment/0XFE83FF3D3B13C3A.avi)
 
 ***DATA ACCESS DISCLOSURE:*** Access to the data used for this research is granted under the Stanford University School of Medicine EchoNet-Dynamic Dataset Research Use Agreement: [Accessing Dataset](https://echonet.github.io/dynamic/index.html#access).
 
