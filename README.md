@@ -132,15 +132,15 @@ Our current pipeline applies **Gaussian Mixture Models (GMM) + Hidden Markov Mod
 
 ### **Alternative State Modeling Techniques:**
 - **Deep Hidden Markov Models (DeepHMM)**: Uses neural networks to model latent state transitions more effectively.
-- **Recurrent Neural Networks (RNNs) or LSTMs**: Can learn **temporal dependencies** in EF progression without requiring discrete states.
-- **Transformer-based Sequence Models**: Could improve performance by better handling long-term dependencies.
 
 ### **Adaptive State Learning**
 - Instead of **predefining the number of states**, use a **data-driven approach** to learn the **optimal number of EF states dynamically**.
 - Why Avoid Predefining States?
     - Cardiac motion is complex and varies across patients, meaning that a fixed number of states may oversimplify or overcomplicate the EF estimation process.
     - Different patients have different ventricular motion characteristics.
-    - Due to iime-dependent changes in EF, using a fixed number of states may fail to capture gradual changes in EF dynamics.
+    - Due to time-dependent changes in EF, using a fixed number of states may fail to capture gradual changes in EF dynamics.
+- **Recurrent Neural Networks (RNNs) or LSTMs**: Can learn **temporal dependencies** in EF progression without requiring discrete states.
+- **Transformer-based Sequence Models**: Could improve performance by better handling long-term dependencies.
 
 
 
