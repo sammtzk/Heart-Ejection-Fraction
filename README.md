@@ -22,6 +22,8 @@ By leveraging machine learning, we aim to **streamline EF estimation**, reduce m
 
 ---
 ## **Data Set**
+![frame1](./attachment/frame_0114.png) ![frame2](./attachment/frame_0156.png)
+![frame3](./attachment/frame_0176.png) ![frame4](./attachment/frame_0194.png)
 
 ***DATA ACCESS DISCLOSURE:*** Access to the data used for this research is granted under the Stanford University School of Medicine EchoNet-Dynamic Dataset Research Use Agreement: [Accessing Dataset](https://echonet.github.io/dynamic/index.html#access).
 
