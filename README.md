@@ -93,6 +93,9 @@ Inputting the raw pixel data from the videos to the Gaussian HMM can lead to com
 
 We will be taking the final layer before the classification layer of ResNet18 to be inputted into the Gaussian HMM for training.
 
+![image](https://github.com/user-attachments/assets/445188ea-7f1f-4f09-943f-7c80cfe3f62a)
+
+
 ### **Gaussian HMM Modeling and Regression**
 
 We use a Gaussian HMM to predict the states because our data input is continuous and we need to model complex, continuous state spaces. For the amount of hidden states, we chose 4 hidden states based on our research on different states of the heart, but multiple hidden state numbers will be considered. The output of the Gaussian HMM will be a prediction of the hidden state per frame. Then we will get the distribution of the states per video and use that as the input for our regression model.
