@@ -93,8 +93,7 @@ Inputting the raw pixel data from the videos to the Gaussian HMM can lead to com
 
 We will be taking the final layer before the classification layer of ResNet18 to be inputted into the Gaussian HMM for training.
 
-![image](https://github.com/user-attachments/assets/445188ea-7f1f-4f09-943f-7c80cfe3f62a)
-
+![image](https://github.com/user-attachments/assets/7855e80d-1056-499a-b749-4f7364c5e434)
 
 ### **Gaussian HMM Modeling and Regression**
 
