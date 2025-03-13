@@ -122,7 +122,9 @@ The choice of **ResNet18** for feature extraction prioritized texture-based patt
 
 ### **Alternative Deep Learning Models:**
 - **Echonet**: A deep learning model specifically designed for echocardiography, trained on large-scale EF datasets.
-- **Other 3DCNN**: There may be some other 3D convolutional model that could capture volumetric changes more effectively.
+- **Other 3D CNN**: There may be some other 3D convolutional model that could capture volumetric changes more effectively.
+    - SlowFast Network
+    - VoxResNet
 - **TimeSformer**: A transformer-based architecture that models spatial and temporal dependencies better than CNNs.
 
 ## **2. Refining State Modeling (Beyond GMM-HMM)**
