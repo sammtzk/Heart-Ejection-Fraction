@@ -23,6 +23,8 @@ By leveraging machine learning, we aim to **streamline EF estimation**, reduce m
 ---
 ## **Data Set**
 
+[![Echocardiogram]("./attachment/0XFE83FF3D3B13C3A.avi")
+
 ***DATA ACCESS DISCLOSURE:*** Access to the data used for this research is granted under the Stanford University School of Medicine EchoNet-Dynamic Dataset Research Use Agreement: [Accessing Dataset](https://echonet.github.io/dynamic/index.html#access).
 
 Our **Cardio-Health Predictive Model** utilizes the **EchoNet-Dynamic dataset**, a publicly available compilation of over **10,000 echocardiogram videos** collected between **2016 and 2018 at Stanford University Hospital**. Each video is accompanied by **volume tracings** and **clinical measurements**, including **ejection fraction (EF)** - a measure estimating the percentage of blood pumped out of the left ventricle during a heart contraction.  
