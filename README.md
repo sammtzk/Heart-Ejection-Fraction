@@ -7,7 +7,7 @@
 
 ---
 ## Model Pipeline
-![Flow Chart](flowchart.png)
+![Flow Chart](./attachment/flowchart.png)
 ---
 ## Result / Summary
 
