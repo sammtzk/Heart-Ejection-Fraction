@@ -2,6 +2,21 @@
 ---
 ## **Problem Statement & Motivation**
 
+### Overview
+The goal of this project is to develop a predictive model for **Ejection Fraction (EF)** estimation, comparing it against **traditional medical techniques**, which rely on **manual annotations** and clinician expertise.
+
+### Motivation
+- **Manual EF estimation is time-consuming**: Conventional approaches involve expert tracings of the left ventricle across multiple frames in an echocardiogram video.
+- **High inter-observer variability**: Different clinicians may provide slightly different EF values, leading to inconsistencies.
+- **Automating EF prediction can enhance efficiency and accessibility**: A deep learning-based approach could assist medical professionals by providing **rapid, consistent, and reproducible** EF predictions.
+
+### Challenges
+- **Complexity of cardiac dynamics**: The heart's motion is nonlinear, requiring models that can capture **both spatial and temporal features**.
+- **Data standardization**: Differences in video formats, resolutions, and acquisition protocols can introduce variability.
+- **Need for robust feature extraction**: Effective EF prediction requires detecting key cardiac phases (**end-diastole and end-systole**) and accurately segmenting the **left ventricle**.
+
+By leveraging machine learning, we aim to **streamline EF estimation**, reduce manual workload, and potentially enable real-time cardiac assessment in clinical settings.
+
 ---
 ## **Data Set**
 
