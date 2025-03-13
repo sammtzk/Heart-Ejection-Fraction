@@ -1,6 +1,6 @@
 # **Bayesian Heart Rate Prediction**
 
-***NOTICE:*** Neither these models, nor the EchoNet-Dynamic dataset, have been reviewed or approved by the Food and Drug Administration. The results, outcomes, and proposals shared here are for non-clinical, **Research Use Only**. In no event shall data or predictions generated through the use of this work be used or relied upon in the diagnosis or provision of patient care.
+***NOTICE:*** Neither these models, nor the EchoNet-Dynamic dataset, have been reviewed or approved by the Food and Drug Administration. The results, models, and proposals shared here are for non-clinical, **Research Use Only**. In no event shall data or predictions generated through the use of this work be used or relied upon in the diagnosis or provision of patient care.
 
 ---
 ## **Problem Statement & Motivation**
