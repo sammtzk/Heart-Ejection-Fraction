@@ -30,7 +30,7 @@ EF is calculated based on two key **cardiac cycle phases**:
 - **End-Systolic Volume (ESV)** – Minimum ventricular volume (after contraction)  
 
 \[
-EF = \left(\frac{EDV - ESV}{EDV} \right) \times 100
+EF = \left(\frac{\text{EDV} - \text{ESV}}{\text{EDV}} \right) \times 100
 \]
 
 ### **Cardiac Cycle Breakdown**  
@@ -48,7 +48,7 @@ EF = \left(\frac{EDV - ESV}{EDV} \right) \times 100
 #### **4. Isovolumetric Relaxation**  
 - The **ventricle relaxes** before it starts **filling up again**  
 
-![Heart Structure](https://www.cardofmich.com/wp-content/uploads/2019/10/Card-of-Mich-_-Blog-Anatomy-of-the-Heart-598167278.jpg)
+<img src="https://www.cardofmich.com/wp-content/uploads/2019/10/Card-of-Mich-_-Blog-Anatomy-of-the-Heart-598167278.jpg" alt="Heart Structure" width="400" />
 ---
 
 This dataset provides the foundation for **training deep learning models** that can accurately analyze heart function, predict ejection fraction, and detect potential heart failure conditions.
