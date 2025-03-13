@@ -23,6 +23,7 @@ We will be taking the final layer before the classification layer of ResNet18 to
 We use a Gaussian HMM to predict the states because our data input is continuous and we need to model complex, continuous state spaces. For the amount of hidden states, we chose 4 hidden states based on our research on different states of the heart, but multiple hidden state numbers will be considered. The output of the Gaussian HMM will be a prediction of the hidden state per frame. Then we will get the distribution of the states per video and use that as the input for our regression model.
 
 The output of the Gaussian HMM model will then be inputted in our regression model as our independent variables (X), with the EF values as our dependent variable (y). Multiple regression models are considered, such as linear regression, ridge regression and ensemble methods (random forest, gradient boosting, XGboost) and compared with each other to find the model with the best performance.
+
 ---
 ## **Result / Summary**
 
