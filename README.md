@@ -5,6 +5,56 @@
 ---
 ## **Data Set**
 
+Our **Cardio-Health Predictive Model** utilizes the **EchoNet-Dynamic dataset**, a publicly available compilation of over **10,000 echocardiogram videos** collected between **2016 and 2018 at Stanford University Hospital**. Each video is accompanied by **volume tracings** and **clinical measurements**, including **ejection fraction (EF)** - a measure estimating the percentage of blood pumped out of the left ventricle during a heart contraction.  
+
+Experts at a **Stanford lab** used the videos, volume tracings, and EF measurements to design a **deep learning model** that:
+- **Accurately outlines the left ventricle** in each frame  
+- **Predicts EF values**  
+- **Classifies heart failure** based on the predicted EF values  
+
+### **Understanding Ejection Fraction (EF)**  
+Ejection Fraction values can be categorized as follows:  
+
+- **50-70% (Normal EF)**  
+  - A healthy heart that pumps an adequate amount of blood out of the left ventricle per beat  
+- **Below 50% (Reduced EF)**  
+  - Indicates impaired pumping capability, which can lead to **mild to severe heart failure symptoms**, such as:
+    - Shortness of breath  
+    - Fluid buildup  
+- **Above 70% (Potential Hypertrophic Cardiomyopathy)**  
+  - A condition where the heart **vigorously pumps out blood** but may still face issues with refilling  
+
+### **Ejection Fraction Formula**  
+EF is calculated based on two key **cardiac cycle phases**:  
+- **End-Diastolic Volume (EDV)** – Maximum ventricular volume (when the ventricle is full)  
+- **End-Systolic Volume (ESV)** – Minimum ventricular volume (after contraction)  
+
+\[
+EF = \left(\frac{EDV - ESV}{EDV} \right) \times 100
+\]
+
+### **Cardiac Cycle Breakdown**  
+
+#### **1. Diastole (EDV) - Filling Phase**  
+- The left **ventricle is relaxed**  
+- Blood **flows in** from the **left atrium**  
+
+#### **2. Isovolumetric Contraction**  
+- The **ventricle contracts**, but **valves remain closed**  
+
+#### **3. Systole (ESV) - Ejection Phase**  
+- **Valves open**, allowing blood to be ejected from the **left ventricle into the aorta**  
+
+#### **4. Isovolumetric Relaxation**  
+- The **ventricle relaxes** before it starts **filling up again**  
+
+![Heart Structure](https://www.cardofmich.com/wp-content/uploads/2019/10/Card-of-Mich-_-Blog-Anatomy-of-the-Heart-598167278.jpg)
+---
+
+This dataset provides the foundation for **training deep learning models** that can accurately analyze heart function, predict ejection fraction, and detect potential heart failure conditions.
+
+Our goal is to create a pipeline that predicts EF using primarily the collection of video echocardiograms provided in the EchoNet-Dyanmic dataset.
+
 ---
 ## **Model Pipeline**
 ![Flow Chart](./attachment/flowchart.png)
