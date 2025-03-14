@@ -31,7 +31,7 @@ Our **Cardio-Health Predictive Model** utilizes the **EchoNet-Dynamic dataset**,
 
 Experts at a **Stanford lab** used the videos, volume tracings, and EF measurements to design a **deep learning model** that:
 - **Accurately outlines the left ventricle** in each frame  
-- **Predicts EF values**  
+- **Predicts Ejection Fraction (EF) values**  
 - **Classifies heart failure** based on the predicted EF values  
 
 ### **Understanding Ejection Fraction (EF)**  
