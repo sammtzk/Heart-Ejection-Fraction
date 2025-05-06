@@ -1,4 +1,4 @@
-# **Bayesian Heart Rate Prediction**
+# **Left Ventricle Ejection Fraction Prediction Using Bayesian ML**
 
 ***NOTICE:*** Neither these models, nor the EchoNet-Dynamic dataset, have been reviewed or approved by the Food and Drug Administration. The results, models, and proposals shared here are for non-clinical, **Research Use Only**. In no event shall data or predictions generated through the use of this work be used or relied upon in the diagnosis or provision of patient care.
 
